@@ -81,6 +81,10 @@
                                             <constraint firstAttribute="bottom" secondItem="XDW-tC-v29" secondAttribute="bottom" id="o9R-J0-Gh8"/>
                                             <constraint firstAttribute="trailing" secondItem="sYz-hg-ox6" secondAttribute="trailing" constant="15" id="o9U-97-He3"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="sYz-hg-ox6" id="aEf-Jf-d3O"/>
+                                            <outlet property="priceLabel" destination="XDW-tC-v29" id="ppn-2x-5m6"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -89,6 +93,9 @@
                                     <constraint firstAttribute="trailing" secondItem="7lf-mX-IUE" secondAttribute="trailing" id="UK8-d9-fFX"/>
                                     <constraint firstItem="7lf-mX-IUE" firstAttribute="top" secondItem="ULm-IT-2be" secondAttribute="top" id="mrd-oT-Qle"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="priceView" destination="7lf-mX-IUE" id="WGp-VJ-1fm"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JbU-bD-9br" customClass="BottomView" customModule="TrackBit" customModuleProvider="target">
                                 <rect key="frame" x="15" y="708" width="345" height="50"/>

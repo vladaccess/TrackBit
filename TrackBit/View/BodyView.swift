@@ -10,4 +10,7 @@ import UIKit
 
 class BodyView:UIView {
     
+    @IBOutlet weak var priceView:PriceView!
+    
+    
 }

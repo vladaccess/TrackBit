@@ -10,6 +10,7 @@ import UIKit
 
 
 extension UIView {
+    
     func increaseAnimation() {
         let animation = CABasicAnimation(keyPath: "transform.scale")
         animation.duration = 0.1
