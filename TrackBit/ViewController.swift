@@ -28,7 +28,7 @@ extension ViewController:TickerServiceProtocol {
     }
     
     func tickerServiceDidFailed(_ serviceFail: ServiceFailure) {
-    
+        
     }
     
     
