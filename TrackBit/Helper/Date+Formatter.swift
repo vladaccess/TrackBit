@@ -15,4 +15,12 @@ extension Date {
         dateFormatter.dateFormat = formatter
         return dateFormatter.string(from: self)
     }
+    
+    
+    func fromString(date:String,dateFormatter:String) -> Date {
+        let dateForm = DateFormatter()
+        dateForm.dateFormat = dateFormatter
+        dateForm.locale = Locale.current
+        return dateForm.date(from: date) ?? Date()
+    }
 }

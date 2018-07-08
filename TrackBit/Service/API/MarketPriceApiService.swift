@@ -37,19 +37,26 @@ class MarketPriceApiService {
     
     private func parametersFunc(_ referenceType:ReferenceType) -> [String:String]{
         var start:Date
-        var distance:String
+        var timespan:String
         
         switch referenceType {
-        case .week: break
-        case .month: break
-        case .year: break
-        case .all: break
+        case .week:
+            timespan = "1week"
+            start = Date().minus(days:7)
+        case .month:
+            timespan = "1month"
+            start = Date().minus(days:30)
+        case .year:
+            timespan = "1year"
+            start = Date().minus(days:360)
+        case .all:
+            start = Date().startOfBitcoin()
+            timespan = "\(Date().diff(date: start))year"
         }
         
-        var dict = [String:String]()
-        //need to translate date to string
-        dict["start"] = //start
-        dict["distance"] = distance
+        var dict:[String:String] = [:]
+        dict["start"] = start.toString("yyyy-MM-dd")
+        dict["timespan"] = timespan
         dict["format"] = "json"
         
         return dict

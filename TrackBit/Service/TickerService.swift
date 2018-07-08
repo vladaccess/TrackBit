@@ -41,7 +41,7 @@ class TickerService:Service<Ticker> {
     }
     
     func failed(_ failed:ServiceFailure) {
-        
+        //TODO
     }
     
 }
