@@ -21,6 +21,8 @@
 		8652DD1820F27A4600A726AA /* MarketPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8652DD1720F27A4600A726AA /* MarketPrice.swift */; };
 		8652DD1B20F2837E00A726AA /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8652DD1A20F2837E00A726AA /* Date+Extensions.swift */; };
 		8652DD1D20F289AD00A726AA /* MarketPriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8652DD1C20F289AD00A726AA /* MarketPriceService.swift */; };
+		8685466020F2AD6700AEC237 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685465F20F2AD6700AEC237 /* HistoryView.swift */; };
+		8685466220F2B8CE00AEC237 /* ViewController+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685466120F2B8CE00AEC237 /* ViewController+Delegate.swift */; };
 		86ECAB1C20F1600100EED033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1B20F1600100EED033 /* AppDelegate.swift */; };
 		86ECAB1E20F1600100EED033 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1D20F1600100EED033 /* ViewController.swift */; };
 		86ECAB2120F1600100EED033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86ECAB1F20F1600100EED033 /* Main.storyboard */; };
@@ -50,6 +52,8 @@
 		8652DD1720F27A4600A726AA /* MarketPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPrice.swift; sourceTree = "<group>"; };
 		8652DD1A20F2837E00A726AA /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		8652DD1C20F289AD00A726AA /* MarketPriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceService.swift; sourceTree = "<group>"; };
+		8685465F20F2AD6700AEC237 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		8685466120F2B8CE00AEC237 /* ViewController+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Delegate.swift"; sourceTree = "<group>"; };
 		86ECAB1820F1600100EED033 /* TrackBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86ECAB1B20F1600100EED033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86ECAB1D20F1600100EED033 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				8607B6FE20F243C300E17948 /* BodyView.swift */,
 				8607B70020F243CE00E17948 /* PriceView.swift */,
 				8607B70220F243DB00E17948 /* BottomView.swift */,
+				8685465F20F2AD6700AEC237 /* HistoryView.swift */,
+				8685466120F2B8CE00AEC237 /* ViewController+Delegate.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -299,9 +305,11 @@
 			files = (
 				86ECAB1E20F1600100EED033 /* ViewController.swift in Sources */,
 				8607B6FC20F2423B00E17948 /* HeaderView.swift in Sources */,
+				8685466220F2B8CE00AEC237 /* ViewController+Delegate.swift in Sources */,
 				8607B6FF20F243C300E17948 /* BodyView.swift in Sources */,
 				8607B70320F243DB00E17948 /* BottomView.swift in Sources */,
 				8607B70120F243CE00E17948 /* PriceView.swift in Sources */,
+				8685466020F2AD6700AEC237 /* HistoryView.swift in Sources */,
 				86ECAB3620F160F500EED033 /* Ticker.swift in Sources */,
 				86ECAB3120F160A100EED033 /* TickerService.swift in Sources */,
 				8607B70520F24B0300E17948 /* UIVIew+Animations.swift in Sources */,

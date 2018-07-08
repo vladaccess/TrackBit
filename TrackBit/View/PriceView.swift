@@ -21,7 +21,7 @@ class PriceView:UIView {
     
     func setPrice(price:Float, date:Date?) {
         guard let stringPrice = price.toCurrency() else { return }
-        dateLabel.text = stringPrice
+        priceLabel.text = stringPrice
         //Show animation
         
         if let date = date {
