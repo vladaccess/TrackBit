@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         let service = TickerService()
         service.delegate = self
         service.get()
+        
+        let service2 = MarketPriceService()
+        service2.delegate = self
+        service2.get(referenceType: .month)
 
     }
 
@@ -23,12 +27,22 @@ class ViewController: UIViewController {
 
 extension ViewController:TickerServiceProtocol {
     func tickerServiceDidComplited(ticker: Ticker, date: Date, chache: Bool) {
-        print("gfg")
-        print(ticker.USD.last)
+    
     }
     
     func tickerServiceDidFailed(_ serviceFail: ServiceFailure) {
         
+    }
+    
+    
+}
+
+extension ViewController:MarketPriceDelegate {
+    func marketPriceDidComplite(_ marketPrice: MarketPrice) {
+        
+    }
+    
+    func marketPriceDidfailed(_ serviceFail: ServiceFailure) {
     }
     
     

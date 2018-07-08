@@ -86,12 +86,22 @@
                                             <outlet property="priceLabel" destination="XDW-tC-v29" id="ppn-2x-5m6"/>
                                         </connections>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6YP-4K-ZrZ">
+                                        <rect key="frame" x="15" y="95" width="315" height="1"/>
+                                        <color key="backgroundColor" red="0.8879639668" green="0.89429527050000002" blue="0.91328918150000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="XZb-wL-F61"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="6YP-4K-ZrZ" firstAttribute="leading" secondItem="ULm-IT-2be" secondAttribute="leading" constant="15" id="LNH-am-ebi"/>
                                     <constraint firstItem="7lf-mX-IUE" firstAttribute="leading" secondItem="ULm-IT-2be" secondAttribute="leading" id="Szd-Rl-Ydz"/>
                                     <constraint firstAttribute="trailing" secondItem="7lf-mX-IUE" secondAttribute="trailing" id="UK8-d9-fFX"/>
                                     <constraint firstItem="7lf-mX-IUE" firstAttribute="top" secondItem="ULm-IT-2be" secondAttribute="top" id="mrd-oT-Qle"/>
+                                    <constraint firstAttribute="trailing" secondItem="6YP-4K-ZrZ" secondAttribute="trailing" constant="15" id="rWp-J5-AhP"/>
+                                    <constraint firstItem="6YP-4K-ZrZ" firstAttribute="top" secondItem="7lf-mX-IUE" secondAttribute="bottom" constant="15" id="xS1-K7-ud6"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="priceView" destination="7lf-mX-IUE" id="WGp-VJ-1fm"/>
@@ -123,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-826" y="134"/>
         </scene>
     </scenes>
     <resources>

@@ -9,12 +9,12 @@
 import Foundation
 
 protocol MarketPriceDelegate:class {
-    func marketPriceDidComplite(_ marketPrice:MarketPrice,date:Date)
+    func marketPriceDidComplite(_ marketPrice:MarketPrice)
     func marketPriceDidfailed(_ serviceFail:ServiceFailure)
 }
 
 
-class MarketPriceService {
+class MarketPriceService:Service<MarketPrice> {
     
     var marketPriceAPI = MarketPriceApiService()
     
@@ -22,8 +22,29 @@ class MarketPriceService {
     weak var delegate:MarketPriceDelegate?
     
     
-    func get() {
-        //Proccessing of results
+    func get(referenceType:ReferenceType) {
+        marketPriceAPI.get(referenceType: referenceType, success: { (data) in
+            //if have marketPlace in db
+            self.success(referenceType,data:data)
+        }) { (failure) in
+            self.failure(referenceType, failure)
+        }
+    }
+    
+    func success(_ refType:ReferenceType,data:Data) {
+        DispatchQueue.main.async {
+            if let marketPrice = self.jsonDecode(data) {
+                self.delegate?.marketPriceDidComplite(marketPrice)
+                //Insert in db
+            }else {
+                self.delegate?.marketPriceDidfailed(.server)
+                //FIX ????????????
+            }
+        }
+    }
+    
+    func failure(_ refType:ReferenceType,_ fail:ServiceFailure) {
+        //TODO
     }
     
     

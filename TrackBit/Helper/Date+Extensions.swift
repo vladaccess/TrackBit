@@ -10,17 +10,17 @@ import Foundation
 
 
 extension Date {
-    func minus(days:Int) -> Date {
-        return minusDate(days)
+    func minus(days days:Int) -> Date {
+        return subtractDays(days)
     }
     
-    func minusDate(_ days:Int) -> Date {
+    private func subtractDays(_ days:Int) -> Date {
         var dateComponents = DateComponents()
         dateComponents.day = -days
         return Calendar.current.date(byAdding: dateComponents, to: self) ?? Date()
     }
     
-    func diff(date start:Date) -> Int {
+    func deprive(date start:Date) -> Int {
         return Calendar.current.dateComponents([.year], from: start, to: self).year ?? 0
     }
     

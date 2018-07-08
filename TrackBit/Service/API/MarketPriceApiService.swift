@@ -41,17 +41,17 @@ class MarketPriceApiService {
         
         switch referenceType {
         case .week:
-            timespan = "1week"
+            timespan = "1weeks"
             start = Date().minus(days:7)
         case .month:
-            timespan = "1month"
+            timespan = "1months"
             start = Date().minus(days:30)
         case .year:
-            timespan = "1year"
+            timespan = "1years"
             start = Date().minus(days:360)
         case .all:
             start = Date().startOfBitcoin()
-            timespan = "\(Date().diff(date: start))year"
+            timespan = "\(Date().deprive(date: start))years"
         }
         
         var dict:[String:String] = [:]

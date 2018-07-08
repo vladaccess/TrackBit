@@ -17,9 +17,13 @@ struct MarketPrice:Decodable {
 struct Value:Decodable {
     let axisX:Int
     let axisY:Float
+    
+    enum CodingKeys:String,CodingKey {
+        case axisX = "x"
+        case axisY = "y"
+    }
 }
 
-enum CodingKeys:String,CodingKey {
-    case axisX = "x"
-    case axisY = "y"
-}
+
+
+
