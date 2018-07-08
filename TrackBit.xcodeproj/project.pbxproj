@@ -18,6 +18,7 @@
 		8607B70B20F25BD600E17948 /* ReferenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607B70A20F25BD600E17948 /* ReferenceType.swift */; };
 		8607B70D20F2650100E17948 /* MarketPriceApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607B70C20F2650100E17948 /* MarketPriceApiService.swift */; };
 		8607B70F20F2665000E17948 /* MarketPriceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607B70E20F2665000E17948 /* MarketPriceRouter.swift */; };
+		8652DD1820F27A4600A726AA /* MarketPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8652DD1720F27A4600A726AA /* MarketPrice.swift */; };
 		86ECAB1C20F1600100EED033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1B20F1600100EED033 /* AppDelegate.swift */; };
 		86ECAB1E20F1600100EED033 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1D20F1600100EED033 /* ViewController.swift */; };
 		86ECAB2120F1600100EED033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86ECAB1F20F1600100EED033 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		8607B70A20F25BD600E17948 /* ReferenceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceType.swift; sourceTree = "<group>"; };
 		8607B70C20F2650100E17948 /* MarketPriceApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceApiService.swift; sourceTree = "<group>"; };
 		8607B70E20F2665000E17948 /* MarketPriceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceRouter.swift; sourceTree = "<group>"; };
+		8652DD1720F27A4600A726AA /* MarketPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPrice.swift; sourceTree = "<group>"; };
 		86ECAB1820F1600100EED033 /* TrackBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86ECAB1B20F1600100EED033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86ECAB1D20F1600100EED033 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		8607B6FA20F2422D00E17948 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				86ECAB1D20F1600100EED033 /* ViewController.swift */,
 				8607B6FB20F2423B00E17948 /* HeaderView.swift */,
 				8607B6FE20F243C300E17948 /* BodyView.swift */,
 				8607B70020F243CE00E17948 /* PriceView.swift */,
@@ -108,6 +111,18 @@
 				8607B70820F2542700E17948 /* Date+Formatter.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		8652DD1620F279C000A726AA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8607B70E20F2665000E17948 /* MarketPriceRouter.swift */,
+				86ECAB3720F1612E00EED033 /* TickerRouter.swift */,
+				86ECAB3920F1634800EED033 /* APIService.swift */,
+				8607B70C20F2650100E17948 /* MarketPriceApiService.swift */,
+				86ECAB2E20F1605F00EED033 /* TickerApiService.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		86ECAB0F20F1600100EED033 = {
@@ -136,7 +151,6 @@
 				86ECAB3420F160EE00EED033 /* Model */,
 				86ECAB2D20F1600E00EED033 /* Service */,
 				86ECAB1B20F1600100EED033 /* AppDelegate.swift */,
-				86ECAB1D20F1600100EED033 /* ViewController.swift */,
 				86ECAB1F20F1600100EED033 /* Main.storyboard */,
 				86ECAB2220F1600200EED033 /* Assets.xcassets */,
 				86ECAB2420F1600200EED033 /* LaunchScreen.storyboard */,
@@ -149,12 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				86ECAB3220F160AC00EED033 /* Service.swift */,
-				86ECAB3920F1634800EED033 /* APIService.swift */,
-				86ECAB3720F1612E00EED033 /* TickerRouter.swift */,
 				86ECAB3020F160A100EED033 /* TickerService.swift */,
-				86ECAB2E20F1605F00EED033 /* TickerApiService.swift */,
-				8607B70C20F2650100E17948 /* MarketPriceApiService.swift */,
-				8607B70E20F2665000E17948 /* MarketPriceRouter.swift */,
+				8652DD1620F279C000A726AA /* API */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -164,6 +174,7 @@
 			children = (
 				86ECAB3520F160F500EED033 /* Ticker.swift */,
 				8607B70A20F25BD600E17948 /* ReferenceType.swift */,
+				8652DD1720F27A4600A726AA /* MarketPrice.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -296,6 +307,7 @@
 				86ECAB3A20F1634800EED033 /* APIService.swift in Sources */,
 				8607B70720F2521900E17948 /* Float+Extension.swift in Sources */,
 				8607B70D20F2650100E17948 /* MarketPriceApiService.swift in Sources */,
+				8652DD1820F27A4600A726AA /* MarketPrice.swift in Sources */,
 				86ECAB2F20F1605F00EED033 /* TickerApiService.swift in Sources */,
 				8607B70B20F25BD600E17948 /* ReferenceType.swift in Sources */,
 			);
