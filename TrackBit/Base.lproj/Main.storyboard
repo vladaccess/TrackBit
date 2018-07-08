@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrackBit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="US5-BQ-5Kx">
-                                <rect key="frame" x="20" y="40" width="335" height="35"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="US5-BQ-5Kx" customClass="HeaderView" customModule="TrackBit" customModuleProvider="target">
+                                <rect key="frame" x="20" y="64" width="335" height="35"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0N-vs-yo1">
-                                        <rect key="frame" x="113.5" y="0.0" width="108.5" height="35"/>
+                                        <rect key="frame" x="113" y="0.0" width="109" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -34,6 +34,9 @@
                                             <constraint firstAttribute="width" constant="25" id="uPg-Yc-gP2"/>
                                         </constraints>
                                         <state key="normal" image="refresh_icon"/>
+                                        <connections>
+                                            <action selector="refreshTapped:" destination="US5-BQ-5Kx" eventType="touchUpInside" id="jXA-7P-f3h"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -44,12 +47,68 @@
                                     <constraint firstAttribute="height" constant="35" id="nEJ-sj-2dY"/>
                                     <constraint firstAttribute="trailing" secondItem="dkn-de-90U" secondAttribute="trailing" constant="10" id="no8-zL-rfM"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="titleLabel" destination="p0N-vs-yo1" id="FVg-Pf-qow"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULm-IT-2be" customClass="BodyView" customModule="TrackBit" customModuleProvider="target">
+                                <rect key="frame" x="15" y="114" width="345" height="579"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lf-mX-IUE" customClass="PriceView" customModule="TrackBit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day,time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYz-hg-ox6">
+                                                <rect key="frame" x="15" y="0.0" width="315" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="R$36.500,00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDW-tC-v29">
+                                                <rect key="frame" x="0.0" y="32" width="345" height="48"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="XDW-tC-v29" firstAttribute="leading" secondItem="7lf-mX-IUE" secondAttribute="leading" id="2cU-1x-1Jw"/>
+                                            <constraint firstItem="XDW-tC-v29" firstAttribute="top" secondItem="sYz-hg-ox6" secondAttribute="bottom" constant="5" id="2iS-zS-Elh"/>
+                                            <constraint firstItem="sYz-hg-ox6" firstAttribute="top" secondItem="7lf-mX-IUE" secondAttribute="top" id="EZI-Qh-v06"/>
+                                            <constraint firstAttribute="trailing" secondItem="XDW-tC-v29" secondAttribute="trailing" id="PYP-MG-RzL"/>
+                                            <constraint firstItem="sYz-hg-ox6" firstAttribute="leading" secondItem="7lf-mX-IUE" secondAttribute="leading" constant="15" id="fW3-mk-8Vm"/>
+                                            <constraint firstAttribute="height" constant="80" id="llg-nF-Kmu"/>
+                                            <constraint firstAttribute="bottom" secondItem="XDW-tC-v29" secondAttribute="bottom" id="o9R-J0-Gh8"/>
+                                            <constraint firstAttribute="trailing" secondItem="sYz-hg-ox6" secondAttribute="trailing" constant="15" id="o9U-97-He3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7lf-mX-IUE" firstAttribute="leading" secondItem="ULm-IT-2be" secondAttribute="leading" id="Szd-Rl-Ydz"/>
+                                    <constraint firstAttribute="trailing" secondItem="7lf-mX-IUE" secondAttribute="trailing" id="UK8-d9-fFX"/>
+                                    <constraint firstItem="7lf-mX-IUE" firstAttribute="top" secondItem="ULm-IT-2be" secondAttribute="top" id="mrd-oT-Qle"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JbU-bD-9br" customClass="BottomView" customModule="TrackBit" customModuleProvider="target">
+                                <rect key="frame" x="15" y="708" width="345" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8uL-gw-gMh"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JbU-bD-9br" secondAttribute="trailing" constant="15" id="Amm-Vi-Q5g"/>
                             <constraint firstItem="US5-BQ-5Kx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Jur-vo-dgv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JbU-bD-9br" secondAttribute="bottom" constant="20" id="KxP-kn-Ahz"/>
+                            <constraint firstItem="ULm-IT-2be" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="SOT-hG-uNs"/>
+                            <constraint firstItem="JbU-bD-9br" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="T6X-sz-026"/>
+                            <constraint firstItem="JbU-bD-9br" firstAttribute="top" secondItem="ULm-IT-2be" secondAttribute="bottom" constant="15" id="WUo-T3-DGy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ULm-IT-2be" secondAttribute="trailing" constant="15" id="eMx-ZY-W3E"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="US5-BQ-5Kx" secondAttribute="trailing" constant="20" id="fF8-Fw-dWF"/>
+                            <constraint firstItem="ULm-IT-2be" firstAttribute="top" secondItem="US5-BQ-5Kx" secondAttribute="bottom" constant="15" id="uja-G9-KUs"/>
                             <constraint firstItem="US5-BQ-5Kx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="wcD-3A-Lur"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

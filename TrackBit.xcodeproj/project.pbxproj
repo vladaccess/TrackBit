@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2826D9D87AE5E7DE84119FE4 /* Pods_TrackBit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DDD1B230C68454422D94FED /* Pods_TrackBit.framework */; };
+		8607B6FC20F2423B00E17948 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607B6FB20F2423B00E17948 /* HeaderView.swift */; };
+		8607B6FF20F243C300E17948 /* BodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607B6FE20F243C300E17948 /* BodyView.swift */; };
+		8607B70120F243CE00E17948 /* PriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607B70020F243CE00E17948 /* PriceView.swift */; };
+		8607B70320F243DB00E17948 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607B70220F243DB00E17948 /* BottomView.swift */; };
+		8607B70520F24B0300E17948 /* UIVIew+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607B70420F24B0300E17948 /* UIVIew+Animations.swift */; };
 		86ECAB1C20F1600100EED033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1B20F1600100EED033 /* AppDelegate.swift */; };
 		86ECAB1E20F1600100EED033 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1D20F1600100EED033 /* ViewController.swift */; };
 		86ECAB2120F1600100EED033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86ECAB1F20F1600100EED033 /* Main.storyboard */; };
@@ -24,6 +29,11 @@
 /* Begin PBXFileReference section */
 		0DDD1B230C68454422D94FED /* Pods_TrackBit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackBit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B9A9120757FD2CDF7413A74 /* Pods-TrackBit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackBit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrackBit/Pods-TrackBit.debug.xcconfig"; sourceTree = "<group>"; };
+		8607B6FB20F2423B00E17948 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8607B6FE20F243C300E17948 /* BodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyView.swift; sourceTree = "<group>"; };
+		8607B70020F243CE00E17948 /* PriceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceView.swift; sourceTree = "<group>"; };
+		8607B70220F243DB00E17948 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
+		8607B70420F24B0300E17948 /* UIVIew+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Animations.swift"; sourceTree = "<group>"; };
 		86ECAB1820F1600100EED033 /* TrackBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86ECAB1B20F1600100EED033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86ECAB1D20F1600100EED033 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +79,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8607B6FA20F2422D00E17948 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8607B6FB20F2423B00E17948 /* HeaderView.swift */,
+				8607B6FE20F243C300E17948 /* BodyView.swift */,
+				8607B70020F243CE00E17948 /* PriceView.swift */,
+				8607B70220F243DB00E17948 /* BottomView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8607B6FD20F2428E00E17948 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8607B70420F24B0300E17948 /* UIVIew+Animations.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		86ECAB0F20F1600100EED033 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +119,8 @@
 		86ECAB1A20F1600100EED033 /* TrackBit */ = {
 			isa = PBXGroup;
 			children = (
+				8607B6FD20F2428E00E17948 /* Helper */,
+				8607B6FA20F2422D00E17948 /* View */,
 				86ECAB3420F160EE00EED033 /* Model */,
 				86ECAB2D20F1600E00EED033 /* Service */,
 				86ECAB1B20F1600100EED033 /* AppDelegate.swift */,
@@ -235,8 +266,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				86ECAB1E20F1600100EED033 /* ViewController.swift in Sources */,
+				8607B6FC20F2423B00E17948 /* HeaderView.swift in Sources */,
+				8607B6FF20F243C300E17948 /* BodyView.swift in Sources */,
+				8607B70320F243DB00E17948 /* BottomView.swift in Sources */,
+				8607B70120F243CE00E17948 /* PriceView.swift in Sources */,
 				86ECAB3620F160F500EED033 /* Ticker.swift in Sources */,
 				86ECAB3120F160A100EED033 /* TickerService.swift in Sources */,
+				8607B70520F24B0300E17948 /* UIVIew+Animations.swift in Sources */,
 				86ECAB3320F160AC00EED033 /* Service.swift in Sources */,
 				86ECAB3820F1612E00EED033 /* TickerRouter.swift in Sources */,
 				86ECAB1C20F1600100EED033 /* AppDelegate.swift in Sources */,
