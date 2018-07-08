@@ -10,8 +10,10 @@ import UIKit
 import Alamofire
 
 class TickerApiService {
+    
+    
     func get(success:@escaping (Data)->Void,failure:@escaping(ServiceFailure)->Void) {
-        _ = request(TickerRouter.get())
+        request(TickerRouter.get())
             .responseJSON(completionHandler: { (response) in
                 guard let data = response.data else {
                     failure(.connection)
@@ -23,8 +25,6 @@ class TickerApiService {
                 }else {
                     failure(.server)
                 }
-                
-                
                 
                 
                 success(data)

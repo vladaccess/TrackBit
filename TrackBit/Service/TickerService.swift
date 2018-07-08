@@ -11,7 +11,7 @@ import UIKit
 
 protocol TickerServiceProtocol:class {
     func tickerServiceDidComplited(ticker:Ticker,date:Date,chache:Bool)
-    func tickerServiceDidFailed()
+    func tickerServiceDidFailed(_ serviceFail:ServiceFailure)
 }
 
 class TickerService:Service<Ticker> {
@@ -35,7 +35,7 @@ class TickerService:Service<Ticker> {
                 //Insert in db
                 self.delegate?.tickerServiceDidComplited(ticker: ticker, date: date, chache: false)
             }else {
-                self.delegate?.tickerServiceDidFailed()
+                self.delegate?.tickerServiceDidFailed(.server)
             }
         }
     }

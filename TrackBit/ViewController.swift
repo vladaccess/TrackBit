@@ -27,8 +27,8 @@ extension ViewController:TickerServiceProtocol {
         print(ticker.USD.last)
     }
     
-    func tickerServiceDidFailed() {
-        print("@@@")
+    func tickerServiceDidFailed(_ serviceFail: ServiceFailure) {
+    
     }
     
     
