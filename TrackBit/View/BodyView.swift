@@ -11,6 +11,7 @@ import UIKit
 class BodyView:UIView {
     
     @IBOutlet weak var priceView:PriceView!
+    @IBOutlet weak var historyView:HistoryView!
     
     
 }

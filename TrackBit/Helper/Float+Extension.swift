@@ -27,4 +27,14 @@ extension Float {
         let number = NSNumber(value: self)
         return numberFormatter.string(from: number)
     }
+    
+    func toPercentString() -> String {
+        var numberFormatter = NumberFormatter()
+        numberFormatter.locale = Locale.current
+        numberFormatter.numberStyle = .percent
+        numberFormatter.usesGroupingSeparator = true
+        numberFormatter.maximumFractionDigits = 1
+        let number = NSNumber(value: self)
+        return numberFormatter.string(from: number) ?? ""
+    }
 }

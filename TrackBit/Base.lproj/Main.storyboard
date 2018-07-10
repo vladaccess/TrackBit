@@ -96,7 +96,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eX-A3-clc" customClass="HistoryView" customModule="TrackBit" customModuleProvider="target">
                                         <rect key="frame" x="15" y="111" width="315" height="453"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9GK-W5-XGd">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9GK-W5-XGd" userLabel="ChartView">
                                                 <rect key="frame" x="0.0" y="60" width="315" height="393"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </view>
@@ -130,16 +130,16 @@
                                                 <rect key="frame" x="265" y="5" width="50" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUG-N3-8jI">
-                                                        <rect key="frame" x="39" y="24.333333333333346" width="11" height="15.666666666666668"/>
+                                                        <rect key="frame" x="17" y="24.333333333333346" width="33" height="15.666666666666668"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RN2-8j-ZL1">
-                                                        <rect key="frame" x="0.0" y="15" width="25" height="25"/>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow_icon" translatesAutoresizingMaskIntoConstraints="NO" id="RN2-8j-ZL1">
+                                                        <rect key="frame" x="0.0" y="23" width="17" height="17"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="25" id="cuz-Lc-Rw4"/>
-                                                            <constraint firstAttribute="height" constant="25" id="iIj-A4-te2"/>
+                                                            <constraint firstAttribute="width" constant="17" id="cuz-Lc-Rw4"/>
+                                                            <constraint firstAttribute="height" constant="17" id="iIj-A4-te2"/>
                                                         </constraints>
                                                     </imageView>
                                                 </subviews>
@@ -150,6 +150,7 @@
                                                     <constraint firstAttribute="width" constant="50" id="chP-co-bp5"/>
                                                     <constraint firstAttribute="bottom" secondItem="RN2-8j-ZL1" secondAttribute="bottom" id="fCX-qR-Rlw"/>
                                                     <constraint firstAttribute="trailing" secondItem="VUG-N3-8jI" secondAttribute="trailing" id="oxz-bu-8bT"/>
+                                                    <constraint firstItem="VUG-N3-8jI" firstAttribute="leading" secondItem="RN2-8j-ZL1" secondAttribute="trailing" id="z3n-LP-dKS"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -165,6 +166,10 @@
                                             <constraint firstItem="9GK-W5-XGd" firstAttribute="top" secondItem="WoO-WW-xGm" secondAttribute="bottom" constant="15" id="rgW-6U-qlC"/>
                                             <constraint firstItem="9GK-W5-XGd" firstAttribute="leading" secondItem="2eX-A3-clc" secondAttribute="leading" id="zcf-1U-xjP"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="arrowImage" destination="RN2-8j-ZL1" id="S2g-V4-4vx"/>
+                                            <outlet property="percentLabel" destination="VUG-N3-8jI" id="Ayg-HE-XaR"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -181,7 +186,8 @@
                                     <constraint firstItem="6YP-4K-ZrZ" firstAttribute="top" secondItem="7lf-mX-IUE" secondAttribute="bottom" constant="15" id="xS1-K7-ud6"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="priceView" destination="7lf-mX-IUE" id="WGp-VJ-1fm"/>
+                                    <outlet property="historyView" destination="2eX-A3-clc" id="sxp-6K-l7L"/>
+                                    <outlet property="priceView" destination="7lf-mX-IUE" id="ocA-cT-Fus"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JbU-bD-9br" customClass="BottomView" customModule="TrackBit" customModuleProvider="target">
@@ -218,6 +224,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="downArrow_icon" width="25" height="25"/>
         <image name="refresh_icon" width="100" height="100"/>
     </resources>
 </document>

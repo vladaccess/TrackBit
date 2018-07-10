@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     
     var tickerService = TickerService()
+    var marketPriceService = MarketPriceService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,10 +23,15 @@ class ViewController: UIViewController {
         //callTickerService()
         headerView.delegate = self
         tickerService.delegate = self
+        marketPriceService.delegate = self
     }
     
     func callTickerService() {
         tickerService.get()
+    }
+    
+    func callMarketPriceService() {
+        marketPriceService.get(referenceType: ReferenceType.week) // Issue
     }
 
 

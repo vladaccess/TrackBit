@@ -17,13 +17,6 @@ extension ViewController:TickerServiceProtocol {
         
     }
     
-    
 }
 
-extension ViewController:HeaderViewDelegate {
-    func refreshButtonTapped() {
-        callTickerService()
-    }
-    
-    
-}
+
