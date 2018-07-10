@@ -22,7 +22,7 @@
                                 <rect key="frame" x="20" y="64" width="335" height="35"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0N-vs-yo1">
-                                        <rect key="frame" x="113" y="0.0" width="109" height="35"/>
+                                        <rect key="frame" x="113.66666666666666" y="0.0" width="108.33333333333334" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -52,7 +52,7 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULm-IT-2be" customClass="BodyView" customModule="TrackBit" customModuleProvider="target">
-                                <rect key="frame" x="15" y="114" width="345" height="579"/>
+                                <rect key="frame" x="15" y="114" width="345" height="585"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7lf-mX-IUE" customClass="PriceView" customModule="TrackBit" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="345" height="80"/>
@@ -94,17 +94,17 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eX-A3-clc" customClass="HistoryView" customModule="TrackBit" customModuleProvider="target">
-                                        <rect key="frame" x="15" y="111" width="315" height="453"/>
+                                        <rect key="frame" x="15" y="111" width="315" height="459"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9GK-W5-XGd" userLabel="ChartView">
-                                                <rect key="frame" x="0.0" y="60" width="315" height="393"/>
+                                                <rect key="frame" x="0.0" y="60" width="315" height="399"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NrF-rm-ZgV" userLabel="LeftView">
                                                 <rect key="frame" x="0.0" y="0.0" width="110" height="45"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History Price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cp-JM-cmO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="22"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="110" height="21.666666666666668"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -169,6 +169,7 @@
                                         <connections>
                                             <outlet property="arrowImage" destination="RN2-8j-ZL1" id="S2g-V4-4vx"/>
                                             <outlet property="percentLabel" destination="VUG-N3-8jI" id="Ayg-HE-XaR"/>
+                                            <outlet property="periodLabel" destination="MAi-hX-fT8" id="yna-TH-osu"/>
                                         </connections>
                                     </view>
                                 </subviews>
@@ -191,10 +192,40 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JbU-bD-9br" customClass="BottomView" customModule="TrackBit" customModuleProvider="target">
-                                <rect key="frame" x="15" y="708" width="345" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="15" y="714" width="345" height="44"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="pxW-Hj-gsg">
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h57-wR-YMd">
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="44"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Week"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2O0-iD-b7z">
+                                                <rect key="frame" x="92" y="0.0" width="69" height="44"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Month"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWx-GZ-92z">
+                                                <rect key="frame" x="184" y="0.0" width="69" height="44"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Year"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVD-bA-NId">
+                                                <rect key="frame" x="276" y="0.0" width="69" height="44"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="All"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="8uL-gw-gMh"/>
+                                    <constraint firstAttribute="height" constant="44" id="8uL-gw-gMh"/>
+                                    <constraint firstAttribute="bottom" secondItem="pxW-Hj-gsg" secondAttribute="bottom" id="Qei-gM-SVE"/>
+                                    <constraint firstItem="pxW-Hj-gsg" firstAttribute="top" secondItem="JbU-bD-9br" secondAttribute="top" id="Vg1-6v-mQo"/>
+                                    <constraint firstItem="pxW-Hj-gsg" firstAttribute="leading" secondItem="JbU-bD-9br" secondAttribute="leading" id="uXm-nd-mnr"/>
+                                    <constraint firstAttribute="trailing" secondItem="pxW-Hj-gsg" secondAttribute="trailing" id="voR-IN-8y3"/>
                                 </constraints>
                             </view>
                         </subviews>

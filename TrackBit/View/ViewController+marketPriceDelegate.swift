@@ -14,9 +14,10 @@ extension ViewController:MarketPriceDelegate {
         var ref = "Week" //var ref = UserDefaults.standard.value(forKey: "") //Change issue
         let firstPrice = marketPrice.values.first?.axisY ?? 0
         let lastPrice = marketPrice.values.last?.axisY ?? 0
+        var ref2 = ReferenceType.week
         
         bodyView.historyView.setPrice(firstPrice: firstPrice, lastPrice: lastPrice)
-        
+        bodyView.historyView.setPeriod(reference:ref2)
     }
     
     func marketPriceDidfailed(_ serviceFail: ServiceFailure) {

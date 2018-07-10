@@ -12,12 +12,25 @@ class HistoryView:UIView {
     
     @IBOutlet weak var percentLabel:UILabel!
     @IBOutlet weak var arrowImage:UIImageView!
+    @IBOutlet weak var periodLabel:UILabel!
     
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         percentLabel.sizeToFit()
+    }
+    
+    
+    func setPeriod(reference:ReferenceType) {
+        var text:String
+        switch reference {
+        case .all: text = "All"
+        case .month: text = "Month"
+        case .week: text = "Week"
+        case .year: text = "Year"
+        }
+        periodLabel.text = text
     }
     
     
