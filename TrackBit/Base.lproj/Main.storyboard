@@ -194,28 +194,40 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JbU-bD-9br" customClass="BottomView" customModule="TrackBit" customModuleProvider="target">
                                 <rect key="frame" x="15" y="714" width="345" height="44"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="pxW-Hj-gsg">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="pxW-Hj-gsg">
                                         <rect key="frame" x="0.0" y="0.0" width="345" height="44"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h57-wR-YMd">
-                                                <rect key="frame" x="0.0" y="0.0" width="69" height="44"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="44"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Week"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="JbU-bD-9br" eventType="touchUpInside" id="112-r1-XqJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2O0-iD-b7z">
-                                                <rect key="frame" x="92" y="0.0" width="69" height="44"/>
+                                                <rect key="frame" x="90.666666666666686" y="0.0" width="73.333333333333314" height="44"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Month"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="JbU-bD-9br" eventType="touchUpInside" id="Dhu-xa-yAh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWx-GZ-92z">
-                                                <rect key="frame" x="184" y="0.0" width="69" height="44"/>
+                                                <rect key="frame" x="181" y="0.0" width="73.666666666666686" height="44"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Year"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="JbU-bD-9br" eventType="touchUpInside" id="byW-7S-gar"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVD-bA-NId">
-                                                <rect key="frame" x="276" y="0.0" width="69" height="44"/>
+                                                <rect key="frame" x="271.66666666666669" y="0.0" width="73.333333333333314" height="44"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="All"/>
+                                                <connections>
+                                                    <action selector="buttonTapped:" destination="JbU-bD-9br" eventType="touchUpInside" id="Qpz-NA-P7b"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -227,6 +239,12 @@
                                     <constraint firstItem="pxW-Hj-gsg" firstAttribute="leading" secondItem="JbU-bD-9br" secondAttribute="leading" id="uXm-nd-mnr"/>
                                     <constraint firstAttribute="trailing" secondItem="pxW-Hj-gsg" secondAttribute="trailing" id="voR-IN-8y3"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="allButton" destination="mVD-bA-NId" id="T0A-PJ-elw"/>
+                                    <outlet property="monthButton" destination="2O0-iD-b7z" id="Rza-IB-rfi"/>
+                                    <outlet property="weekButton" destination="h57-wR-YMd" id="NZ6-L4-bom"/>
+                                    <outlet property="yearButton" destination="lWx-GZ-92z" id="4jB-Oi-jul"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

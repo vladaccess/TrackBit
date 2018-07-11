@@ -36,6 +36,7 @@
 		86ECAB3620F160F500EED033 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB3520F160F500EED033 /* Ticker.swift */; };
 		86ECAB3820F1612E00EED033 /* TickerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB3720F1612E00EED033 /* TickerRouter.swift */; };
 		86ECAB3A20F1634800EED033 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB3920F1634800EED033 /* APIService.swift */; };
+		86FFFFAD20F6B9F4002A32F8 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FFFFAC20F6B9F4002A32F8 /* UIButton+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		86ECAB3520F160F500EED033 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		86ECAB3720F1612E00EED033 /* TickerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRouter.swift; sourceTree = "<group>"; };
 		86ECAB3920F1634800EED033 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		86FFFFAC20F6B9F4002A32F8 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		FE653553CB3FA59C5D941F16 /* Pods-TrackBit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackBit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackBit/Pods-TrackBit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,7 @@
 				8607B70620F2521900E17948 /* Float+Extension.swift */,
 				8607B70820F2542700E17948 /* Date+Formatter.swift */,
 				8652DD1A20F2837E00A726AA /* Date+Extensions.swift */,
+				86FFFFAC20F6B9F4002A32F8 /* UIButton+Extensions.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				86ECAB2F20F1605F00EED033 /* TickerApiService.swift in Sources */,
 				86A72CE620F423E200137669 /* ViewController+marketPriceDelegate.swift in Sources */,
 				8607B70B20F25BD600E17948 /* ReferenceType.swift in Sources */,
+				86FFFFAD20F6B9F4002A32F8 /* UIButton+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
