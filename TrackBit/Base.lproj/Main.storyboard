@@ -96,7 +96,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eX-A3-clc" customClass="HistoryView" customModule="TrackBit" customModuleProvider="target">
                                         <rect key="frame" x="15" y="111" width="315" height="459"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9GK-W5-XGd" userLabel="ChartView">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9GK-W5-XGd" userLabel="ChartView" customClass="ChartView" customModule="TrackBit" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="60" width="315" height="399"/>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                             </view>
@@ -168,6 +168,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="arrowImage" destination="RN2-8j-ZL1" id="S2g-V4-4vx"/>
+                                            <outlet property="chartView" destination="9GK-W5-XGd" id="1RL-zY-DkU"/>
                                             <outlet property="percentLabel" destination="VUG-N3-8jI" id="Ayg-HE-XaR"/>
                                             <outlet property="periodLabel" destination="MAi-hX-fT8" id="yna-TH-osu"/>
                                         </connections>

@@ -6,5 +6,6 @@ target 'TrackBit' do
   use_frameworks!
 
   pod 'Alamofire'
+  pod 'Charts'
 
 end

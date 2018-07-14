@@ -9,7 +9,9 @@
 import UIKit
 
 
-class Button:UIButton {
+extension UIButton {
+    
+    
     override open var isSelected: Bool {
         didSet {
             self.backgroundColor = isSelected ? UIColor.purple : UIColor.white
@@ -28,6 +30,7 @@ class Button:UIButton {
             self.backgroundColor?.withAlphaComponent(CGFloat(alpha))
         }
     }
+    
 }
 
 

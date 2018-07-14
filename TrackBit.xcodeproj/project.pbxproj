@@ -19,6 +19,7 @@
 		8607B70D20F2650100E17948 /* MarketPriceApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607B70C20F2650100E17948 /* MarketPriceApiService.swift */; };
 		8607B70F20F2665000E17948 /* MarketPriceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8607B70E20F2665000E17948 /* MarketPriceRouter.swift */; };
 		861A6EEB20F377B700E10EE8 /* ViewController+HeaderViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A6EEA20F377B700E10EE8 /* ViewController+HeaderViewDelegate.swift */; };
+		862662FC20FAB3DD000C86C3 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862662FB20FAB3DD000C86C3 /* ChartView.swift */; };
 		8652DD1820F27A4600A726AA /* MarketPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8652DD1720F27A4600A726AA /* MarketPrice.swift */; };
 		8652DD1B20F2837E00A726AA /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8652DD1A20F2837E00A726AA /* Date+Extensions.swift */; };
 		8652DD1D20F289AD00A726AA /* MarketPriceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8652DD1C20F289AD00A726AA /* MarketPriceService.swift */; };
@@ -53,6 +54,7 @@
 		8607B70C20F2650100E17948 /* MarketPriceApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceApiService.swift; sourceTree = "<group>"; };
 		8607B70E20F2665000E17948 /* MarketPriceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceRouter.swift; sourceTree = "<group>"; };
 		861A6EEA20F377B700E10EE8 /* ViewController+HeaderViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+HeaderViewDelegate.swift"; sourceTree = "<group>"; };
+		862662FB20FAB3DD000C86C3 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		8652DD1720F27A4600A726AA /* MarketPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPrice.swift; sourceTree = "<group>"; };
 		8652DD1A20F2837E00A726AA /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		8652DD1C20F289AD00A726AA /* MarketPriceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPriceService.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				8607B70020F243CE00E17948 /* PriceView.swift */,
 				8607B70220F243DB00E17948 /* BottomView.swift */,
 				8685465F20F2AD6700AEC237 /* HistoryView.swift */,
+				862662FB20FAB3DD000C86C3 /* ChartView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,10 +298,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TrackBit/Pods-TrackBit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -335,6 +340,7 @@
 				8607B70D20F2650100E17948 /* MarketPriceApiService.swift in Sources */,
 				8652DD1820F27A4600A726AA /* MarketPrice.swift in Sources */,
 				86ECAB2F20F1605F00EED033 /* TickerApiService.swift in Sources */,
+				862662FC20FAB3DD000C86C3 /* ChartView.swift in Sources */,
 				86A72CE620F423E200137669 /* ViewController+marketPriceDelegate.swift in Sources */,
 				8607B70B20F25BD600E17948 /* ReferenceType.swift in Sources */,
 				86FFFFAD20F6B9F4002A32F8 /* UIButton+Extensions.swift in Sources */,

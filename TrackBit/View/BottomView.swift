@@ -42,7 +42,7 @@ class BottomView:UIView {
         button.isSelected = true
     }
     
-    @IBAction func buttonTapped(_ sender:Button) {
+    @IBAction func buttonTapped(_ sender:UIButton) {
         unselectButtonS()
         var ref:ReferenceType
         guard let currentTitle = sender.currentTitle else { return }

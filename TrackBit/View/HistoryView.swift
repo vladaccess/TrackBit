@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import Charts
 
 class HistoryView:UIView {
     
     @IBOutlet weak var percentLabel:UILabel!
     @IBOutlet weak var arrowImage:UIImageView!
     @IBOutlet weak var periodLabel:UILabel!
-    
+    @IBOutlet weak var chartView:ChartView!
     
     
     override func awakeFromNib() {
@@ -31,6 +32,10 @@ class HistoryView:UIView {
         case .year: text = "Year"
         }
         periodLabel.text = text
+    }
+    
+    func setChartData(ref:ReferenceType,values:[ChartDataEntry]) {
+        chartView.setData(values)
     }
     
     
