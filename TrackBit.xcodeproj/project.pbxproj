@@ -28,6 +28,7 @@
 		8685466220F2B8CE00AEC237 /* ViewController+TickerSeviceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685466120F2B8CE00AEC237 /* ViewController+TickerSeviceDelegate.swift */; };
 		86A72CE620F423E200137669 /* ViewController+marketPriceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A72CE520F423E200137669 /* ViewController+marketPriceDelegate.swift */; };
 		86E2DD2D2118E88C00AE5E0A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD2C2118E88C00AE5E0A /* CustomButton.swift */; };
+		86E2DD322118F4FB00AE5E0A /* UIView+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD312118F4FB00AE5E0A /* UIView+Extenstions.swift */; };
 		86ECAB1C20F1600100EED033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1B20F1600100EED033 /* AppDelegate.swift */; };
 		86ECAB1E20F1600100EED033 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1D20F1600100EED033 /* ViewController.swift */; };
 		86ECAB2120F1600100EED033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86ECAB1F20F1600100EED033 /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 		8685466120F2B8CE00AEC237 /* ViewController+TickerSeviceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TickerSeviceDelegate.swift"; sourceTree = "<group>"; };
 		86A72CE520F423E200137669 /* ViewController+marketPriceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+marketPriceDelegate.swift"; sourceTree = "<group>"; };
 		86E2DD2C2118E88C00AE5E0A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		86E2DD312118F4FB00AE5E0A /* UIView+Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extenstions.swift"; sourceTree = "<group>"; };
 		86ECAB1820F1600100EED033 /* TrackBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86ECAB1B20F1600100EED033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86ECAB1D20F1600100EED033 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				8607B70820F2542700E17948 /* Date+Formatter.swift */,
 				8652DD1A20F2837E00A726AA /* Date+Extensions.swift */,
 				86553FAB2118E34400F91102 /* UserDefaults+Extensions.swift */,
+				86E2DD312118F4FB00AE5E0A /* UIView+Extenstions.swift */,
 				8607B6FA20F2422D00E17948 /* View */,
 			);
 			path = Helper;
@@ -333,6 +336,7 @@
 				8685466220F2B8CE00AEC237 /* ViewController+TickerSeviceDelegate.swift in Sources */,
 				861A6EEB20F377B700E10EE8 /* ViewController+HeaderViewDelegate.swift in Sources */,
 				86E2DD2D2118E88C00AE5E0A /* CustomButton.swift in Sources */,
+				86E2DD322118F4FB00AE5E0A /* UIView+Extenstions.swift in Sources */,
 				8607B6FF20F243C300E17948 /* BodyView.swift in Sources */,
 				8607B70320F243DB00E17948 /* BottomView.swift in Sources */,
 				8607B70120F243CE00E17948 /* PriceView.swift in Sources */,

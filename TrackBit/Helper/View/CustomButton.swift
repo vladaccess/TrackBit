@@ -26,6 +26,7 @@ class CustomButton: UIButton {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
+        amendShadow()
         setTitleColor(UIColor.white, for: .selected)
         setTitleColor(UIColor.purple, for: .normal)
     }
