@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var bodyView:BodyView!
     @IBOutlet weak var headerView:HeaderView!
+    @IBOutlet weak var bottomView:BottomView!
     
     
     var tickerService = TickerService()
@@ -20,8 +21,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         callTickerService()
-        callMarketPriceService()
+        callMarketPriceService(refType: UserDefaults.standard.getReference())
         headerView.delegate = self
+        bottomView.delegate = self
+        bottomView.setReference(UserDefaults.standard.getReference())
         tickerService.delegate = self
         marketPriceService.delegate = self
     }
@@ -30,13 +33,21 @@ class ViewController: UIViewController {
         tickerService.get()
     }
     
-    func callMarketPriceService() {
-        marketPriceService.get(referenceType: ReferenceType.week) // Issue
+    func callMarketPriceService(refType:ReferenceType) {
+        marketPriceService.get(referenceType: refType)
     }
     
     
 
 
+}
+
+extension ViewController:BottomViewDelegate {
+    func buttonTappedWith(_ ref: ReferenceType) {
+        UserDefaults.standard.setReference(ref: ref)
+        callMarketPriceService(refType: ref)
+    }
+    
 }
 
 

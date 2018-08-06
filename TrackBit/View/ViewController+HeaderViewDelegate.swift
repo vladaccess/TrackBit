@@ -12,6 +12,7 @@ import Foundation
 extension ViewController:HeaderViewDelegate {
     func refreshButtonTapped() {
         callTickerService()
-        callMarketPriceService()
+        let reference = UserDefaults.standard.getReference()
+        callMarketPriceService(refType: reference)
     }
 }

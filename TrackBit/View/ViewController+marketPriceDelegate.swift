@@ -12,10 +12,9 @@ import Charts
 
 extension ViewController:MarketPriceDelegate {
     func marketPriceDidComplite(_ marketPrice: MarketPrice) {
-        var ref = "Week" //var ref = UserDefaults.standard.value(forKey: "") //Change issue
+        let ref = UserDefaults.standard.getReference()
         let firstPrice = marketPrice.values.first?.axisY ?? 0
         let lastPrice = marketPrice.values.last?.axisY ?? 0
-        var ref2 = ReferenceType.week
         var values:[ChartDataEntry] = []
         for value in marketPrice.values {
             let x = Double(value.axisX)
@@ -23,8 +22,8 @@ extension ViewController:MarketPriceDelegate {
             values.append(ChartDataEntry(x: x, y: y))
         }
         bodyView.historyView.setPrice(firstPrice: firstPrice, lastPrice: lastPrice)
-        bodyView.historyView.setPeriod(reference:ref2)
-        bodyView.historyView.setChartData(ref: ref2, values: values)
+        bodyView.historyView.setPeriod(reference:ref)
+        bodyView.historyView.setChartData(ref: ref, values: values)
     }
     
     func marketPriceDidfailed(_ serviceFail: ServiceFailure) {

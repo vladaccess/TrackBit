@@ -265,6 +265,7 @@
                     </view>
                     <connections>
                         <outlet property="bodyView" destination="ULm-IT-2be" id="Quz-St-LjF"/>
+                        <outlet property="bottomView" destination="JbU-bD-9br" id="qPU-I9-hSi"/>
                         <outlet property="headerView" destination="US5-BQ-5Kx" id="HGO-Xg-n69"/>
                     </connections>
                 </viewController>
