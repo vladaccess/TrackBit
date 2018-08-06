@@ -135,7 +135,6 @@
 				8652DD1A20F2837E00A726AA /* Date+Extensions.swift */,
 				86553FAB2118E34400F91102 /* UserDefaults+Extensions.swift */,
 				86E2DD312118F4FB00AE5E0A /* UIView+Extenstions.swift */,
-				8607B6FA20F2422D00E17948 /* View */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -184,6 +183,7 @@
 		86ECAB1A20F1600100EED033 /* TrackBit */ = {
 			isa = PBXGroup;
 			children = (
+				8607B6FA20F2422D00E17948 /* View */,
 				8607B6FD20F2428E00E17948 /* Helper */,
 				86ECAB3420F160EE00EED033 /* Model */,
 				86ECAB2D20F1600E00EED033 /* Service */,
