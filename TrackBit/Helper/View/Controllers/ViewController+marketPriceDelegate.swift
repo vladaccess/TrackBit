@@ -24,6 +24,7 @@ extension ViewController:MarketPriceDelegate {
         bodyView.historyView.setPrice(firstPrice: firstPrice, lastPrice: lastPrice)
         bodyView.historyView.setPeriod(reference:ref)
         bodyView.historyView.setChartData(ref: ref, values: values)
+        activityView.stopAnimating()
     }
     
     func marketPriceDidfailed(_ serviceFail: ServiceFailure) {

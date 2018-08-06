@@ -27,6 +27,7 @@
 		8685466020F2AD6700AEC237 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685465F20F2AD6700AEC237 /* HistoryView.swift */; };
 		8685466220F2B8CE00AEC237 /* ViewController+TickerSeviceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8685466120F2B8CE00AEC237 /* ViewController+TickerSeviceDelegate.swift */; };
 		86A72CE620F423E200137669 /* ViewController+marketPriceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A72CE520F423E200137669 /* ViewController+marketPriceDelegate.swift */; };
+		86E2DD2D2118E88C00AE5E0A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD2C2118E88C00AE5E0A /* CustomButton.swift */; };
 		86ECAB1C20F1600100EED033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1B20F1600100EED033 /* AppDelegate.swift */; };
 		86ECAB1E20F1600100EED033 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1D20F1600100EED033 /* ViewController.swift */; };
 		86ECAB2120F1600100EED033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86ECAB1F20F1600100EED033 /* Main.storyboard */; };
@@ -38,7 +39,6 @@
 		86ECAB3620F160F500EED033 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB3520F160F500EED033 /* Ticker.swift */; };
 		86ECAB3820F1612E00EED033 /* TickerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB3720F1612E00EED033 /* TickerRouter.swift */; };
 		86ECAB3A20F1634800EED033 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB3920F1634800EED033 /* APIService.swift */; };
-		86FFFFAD20F6B9F4002A32F8 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FFFFAC20F6B9F4002A32F8 /* UIButton+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +63,7 @@
 		8685465F20F2AD6700AEC237 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		8685466120F2B8CE00AEC237 /* ViewController+TickerSeviceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+TickerSeviceDelegate.swift"; sourceTree = "<group>"; };
 		86A72CE520F423E200137669 /* ViewController+marketPriceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+marketPriceDelegate.swift"; sourceTree = "<group>"; };
+		86E2DD2C2118E88C00AE5E0A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		86ECAB1820F1600100EED033 /* TrackBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86ECAB1B20F1600100EED033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86ECAB1D20F1600100EED033 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +77,6 @@
 		86ECAB3520F160F500EED033 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		86ECAB3720F1612E00EED033 /* TickerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRouter.swift; sourceTree = "<group>"; };
 		86ECAB3920F1634800EED033 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		86FFFFAC20F6B9F4002A32F8 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		FE653553CB3FA59C5D941F16 /* Pods-TrackBit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrackBit.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrackBit/Pods-TrackBit.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,16 +112,14 @@
 		8607B6FA20F2422D00E17948 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				86ECAB1D20F1600100EED033 /* ViewController.swift */,
-				8685466120F2B8CE00AEC237 /* ViewController+TickerSeviceDelegate.swift */,
-				861A6EEA20F377B700E10EE8 /* ViewController+HeaderViewDelegate.swift */,
-				86A72CE520F423E200137669 /* ViewController+marketPriceDelegate.swift */,
+				86E2DD302118F48700AE5E0A /* Controllers */,
 				8607B6FB20F2423B00E17948 /* HeaderView.swift */,
 				8607B6FE20F243C300E17948 /* BodyView.swift */,
 				8607B70020F243CE00E17948 /* PriceView.swift */,
 				8607B70220F243DB00E17948 /* BottomView.swift */,
 				8685465F20F2AD6700AEC237 /* HistoryView.swift */,
 				862662FB20FAB3DD000C86C3 /* ChartView.swift */,
+				86E2DD2C2118E88C00AE5E0A /* CustomButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -133,8 +131,8 @@
 				8607B70620F2521900E17948 /* Float+Extension.swift */,
 				8607B70820F2542700E17948 /* Date+Formatter.swift */,
 				8652DD1A20F2837E00A726AA /* Date+Extensions.swift */,
-				86FFFFAC20F6B9F4002A32F8 /* UIButton+Extensions.swift */,
 				86553FAB2118E34400F91102 /* UserDefaults+Extensions.swift */,
+				8607B6FA20F2422D00E17948 /* View */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -149,6 +147,17 @@
 				86ECAB2E20F1605F00EED033 /* TickerApiService.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		86E2DD302118F48700AE5E0A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				86ECAB1D20F1600100EED033 /* ViewController.swift */,
+				8685466120F2B8CE00AEC237 /* ViewController+TickerSeviceDelegate.swift */,
+				861A6EEA20F377B700E10EE8 /* ViewController+HeaderViewDelegate.swift */,
+				86A72CE520F423E200137669 /* ViewController+marketPriceDelegate.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		86ECAB0F20F1600100EED033 = {
@@ -173,7 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				8607B6FD20F2428E00E17948 /* Helper */,
-				8607B6FA20F2422D00E17948 /* View */,
 				86ECAB3420F160EE00EED033 /* Model */,
 				86ECAB2D20F1600E00EED033 /* Service */,
 				86ECAB1B20F1600100EED033 /* AppDelegate.swift */,
@@ -324,6 +332,7 @@
 				8607B6FC20F2423B00E17948 /* HeaderView.swift in Sources */,
 				8685466220F2B8CE00AEC237 /* ViewController+TickerSeviceDelegate.swift in Sources */,
 				861A6EEB20F377B700E10EE8 /* ViewController+HeaderViewDelegate.swift in Sources */,
+				86E2DD2D2118E88C00AE5E0A /* CustomButton.swift in Sources */,
 				8607B6FF20F243C300E17948 /* BodyView.swift in Sources */,
 				8607B70320F243DB00E17948 /* BottomView.swift in Sources */,
 				8607B70120F243CE00E17948 /* PriceView.swift in Sources */,
@@ -347,7 +356,6 @@
 				862662FC20FAB3DD000C86C3 /* ChartView.swift in Sources */,
 				86A72CE620F423E200137669 /* ViewController+marketPriceDelegate.swift in Sources */,
 				8607B70B20F25BD600E17948 /* ReferenceType.swift in Sources */,
-				86FFFFAD20F6B9F4002A32F8 /* UIButton+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

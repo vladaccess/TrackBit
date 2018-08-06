@@ -8,11 +8,13 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var bodyView:BodyView!
     @IBOutlet weak var headerView:HeaderView!
     @IBOutlet weak var bottomView:BottomView!
+    @IBOutlet weak var activityView:UIActivityIndicatorView!
     
     
     var tickerService = TickerService()
@@ -30,12 +32,15 @@ class ViewController: UIViewController {
     }
     
     func callTickerService() {
+        activityView.startAnimating()
         tickerService.get()
     }
     
     func callMarketPriceService(refType:ReferenceType) {
+        activityView.startAnimating()
         marketPriceService.get(referenceType: refType)
     }
+    
     
     
 

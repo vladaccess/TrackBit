@@ -98,7 +98,17 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9GK-W5-XGd" userLabel="ChartView" customClass="ChartView" customModule="TrackBit" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="60" width="315" height="399"/>
+                                                <subviews>
+                                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Wig-Lr-Vet">
+                                                        <rect key="frame" x="148" y="190" width="20" height="20"/>
+                                                        <color key="color" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="0.47923801369863012" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </activityIndicatorView>
+                                                </subviews>
                                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Wig-Lr-Vet" firstAttribute="centerY" secondItem="9GK-W5-XGd" secondAttribute="centerY" id="aMU-6z-OZH"/>
+                                                    <constraint firstItem="Wig-Lr-Vet" firstAttribute="centerX" secondItem="9GK-W5-XGd" secondAttribute="centerX" id="oGP-26-b0i"/>
+                                                </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NrF-rm-ZgV" userLabel="LeftView">
                                                 <rect key="frame" x="0.0" y="0.0" width="110" height="45"/>
@@ -129,7 +139,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WoO-WW-xGm" userLabel="RightView">
                                                 <rect key="frame" x="265" y="5" width="50" height="40"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUG-N3-8jI">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="VUG-N3-8jI">
                                                         <rect key="frame" x="17" y="24.333333333333346" width="33" height="15.666666666666668"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <nil key="textColor"/>
@@ -187,6 +197,11 @@
                                     <constraint firstAttribute="trailing" secondItem="6YP-4K-ZrZ" secondAttribute="trailing" constant="15" id="rWp-J5-AhP"/>
                                     <constraint firstItem="6YP-4K-ZrZ" firstAttribute="top" secondItem="7lf-mX-IUE" secondAttribute="bottom" constant="15" id="xS1-K7-ud6"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="historyView" destination="2eX-A3-clc" id="sxp-6K-l7L"/>
                                     <outlet property="priceView" destination="7lf-mX-IUE" id="ocA-cT-Fus"/>
@@ -198,34 +213,42 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="pxW-Hj-gsg">
                                         <rect key="frame" x="0.0" y="0.0" width="345" height="44"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h57-wR-YMd">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h57-wR-YMd" customClass="CustomButton" customModule="TrackBit" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="73.666666666666671" height="44"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Week"/>
+                                                <state key="normal" title="Week">
+                                                    <color key="titleColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="buttonTapped:" destination="JbU-bD-9br" eventType="touchUpInside" id="112-r1-XqJ"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2O0-iD-b7z">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2O0-iD-b7z" customClass="CustomButton" customModule="TrackBit" customModuleProvider="target">
                                                 <rect key="frame" x="90.666666666666686" y="0.0" width="73.333333333333314" height="44"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Month"/>
+                                                <state key="normal" title="Month">
+                                                    <color key="titleColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="buttonTapped:" destination="JbU-bD-9br" eventType="touchUpInside" id="Dhu-xa-yAh"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWx-GZ-92z">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWx-GZ-92z" customClass="CustomButton" customModule="TrackBit" customModuleProvider="target">
                                                 <rect key="frame" x="181" y="0.0" width="73.666666666666686" height="44"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Year"/>
+                                                <state key="normal" title="Year">
+                                                    <color key="titleColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="buttonTapped:" destination="JbU-bD-9br" eventType="touchUpInside" id="byW-7S-gar"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVD-bA-NId">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVD-bA-NId" customClass="CustomButton" customModule="TrackBit" customModuleProvider="target">
                                                 <rect key="frame" x="271.66666666666669" y="0.0" width="73.333333333333314" height="44"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="All"/>
+                                                <state key="normal" title="All">
+                                                    <color key="titleColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="buttonTapped:" destination="JbU-bD-9br" eventType="touchUpInside" id="Qpz-NA-P7b"/>
                                                 </connections>
@@ -264,6 +287,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityView" destination="Wig-Lr-Vet" id="H69-lz-fD0"/>
                         <outlet property="bodyView" destination="ULm-IT-2be" id="Quz-St-LjF"/>
                         <outlet property="bottomView" destination="JbU-bD-9br" id="qPU-I9-hSi"/>
                         <outlet property="headerView" destination="US5-BQ-5Kx" id="HGO-Xg-n69"/>

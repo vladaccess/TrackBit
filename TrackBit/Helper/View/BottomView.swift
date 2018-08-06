@@ -15,10 +15,10 @@ protocol BottomViewDelegate:class {
 
 class BottomView:UIView {
     
-    @IBOutlet weak var weekButton:UIButton!
-    @IBOutlet weak var monthButton:UIButton!
-    @IBOutlet weak var yearButton:UIButton!
-    @IBOutlet weak var allButton:UIButton!
+    @IBOutlet weak var weekButton:CustomButton!
+    @IBOutlet weak var monthButton:CustomButton!
+    @IBOutlet weak var yearButton:CustomButton!
+    @IBOutlet weak var allButton:CustomButton!
     
     
     weak var delegate:BottomViewDelegate?
@@ -32,7 +32,7 @@ class BottomView:UIView {
     
     func setReference(_ type:ReferenceType) {
         unselectButtonS()
-        var button:UIButton
+        var button:CustomButton
         switch type {
         case .all: button = allButton
         case .month: button = monthButton
