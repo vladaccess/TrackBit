@@ -12,7 +12,7 @@ extension ViewController:TickerServiceProtocol {
     func tickerServiceDidComplited(ticker: Ticker, date: Date, cache: Bool) {
         bodyView.priceView.setPrice(price: ticker.USD.last, date: date)
         if cache {
-            //Show banner(NoConnection)
+            SwiftBannerManager.shared.show(state: .connection)
         }
         activityView.stopAnimating()
     }
@@ -20,12 +20,11 @@ extension ViewController:TickerServiceProtocol {
     func tickerServiceDidFailed(_ serviceFail: ServiceFailure) {
         bodyView.priceView.setPrice(price: 0)
         activityView.stopAnimating()
-        
         switch serviceFail {
         case .connection:
-            //ShowBanner
+            SwiftBannerManager.shared.show(state: .connection)
         case .server:
-            //ShowBanner
+            SwiftBannerManager.shared.show(state: .server)
         }
     }
     

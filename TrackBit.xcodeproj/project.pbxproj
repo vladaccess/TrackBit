@@ -33,6 +33,7 @@
 		86E2DD392119A15D00AE5E0A /* dbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD382119A15D00AE5E0A /* dbManager.swift */; };
 		86E2DD412119AD1B00AE5E0A /* TrackBitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD402119AD1B00AE5E0A /* TrackBitTests.swift */; };
 		86E2DD4B2119E5E600AE5E0A /* TickerAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD4A2119E5E600AE5E0A /* TickerAPITests.swift */; };
+		86E2DD4D2119F20F00AE5E0A /* SwiftBannerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD4C2119F20F00AE5E0A /* SwiftBannerManager.swift */; };
 		86ECAB1C20F1600100EED033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1B20F1600100EED033 /* AppDelegate.swift */; };
 		86ECAB1E20F1600100EED033 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1D20F1600100EED033 /* ViewController.swift */; };
 		86ECAB2120F1600100EED033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86ECAB1F20F1600100EED033 /* Main.storyboard */; };
@@ -86,6 +87,7 @@
 		86E2DD402119AD1B00AE5E0A /* TrackBitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackBitTests.swift; sourceTree = "<group>"; };
 		86E2DD422119AD1B00AE5E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86E2DD4A2119E5E600AE5E0A /* TickerAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerAPITests.swift; sourceTree = "<group>"; };
+		86E2DD4C2119F20F00AE5E0A /* SwiftBannerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBannerManager.swift; sourceTree = "<group>"; };
 		86ECAB1820F1600100EED033 /* TrackBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86ECAB1B20F1600100EED033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86ECAB1D20F1600100EED033 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				8652DD1A20F2837E00A726AA /* Date+Extensions.swift */,
 				86553FAB2118E34400F91102 /* UserDefaults+Extensions.swift */,
 				86E2DD312118F4FB00AE5E0A /* UIView+Extenstions.swift */,
+				86E2DD4C2119F20F00AE5E0A /* SwiftBannerManager.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 				86ECAB3320F160AC00EED033 /* Service.swift in Sources */,
 				86ECAB3820F1612E00EED033 /* TickerRouter.swift in Sources */,
 				8607B70920F2542700E17948 /* Date+Formatter.swift in Sources */,
+				86E2DD4D2119F20F00AE5E0A /* SwiftBannerManager.swift in Sources */,
 				86E2DD392119A15D00AE5E0A /* dbManager.swift in Sources */,
 				86ECAB1C20F1600100EED033 /* AppDelegate.swift in Sources */,
 				8652DD1B20F2837E00A726AA /* Date+Extensions.swift in Sources */,
