@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     var tickerService = TickerService()
     var marketPriceService = MarketPriceService()
+    var db = dbManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()

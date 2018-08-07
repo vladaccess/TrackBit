@@ -32,7 +32,7 @@ class TickerService:Service<Ticker> {
         DispatchQueue.main.async {
             if let ticker = self.jsonDecode(data) {
                 let date = Date()
-                //Insert in db
+                self.insert(data: data, date: date)
                 self.delegate?.tickerServiceDidComplited(ticker: ticker, date: date, chache: false)
             }else {
                 self.delegate?.tickerServiceDidFailed(.server)
@@ -41,7 +41,18 @@ class TickerService:Service<Ticker> {
     }
     
     func failed(_ failed:ServiceFailure) {
-        //If have data in db fetch else fail
+        DispatchQueue.main.async {
+            guard let storedObject = self.fetch(byReference: nil) else {
+                self.delegate?.tickerServiceDidFailed(failed)
+                return
+            }
+            if let data = storedObject.data,let date = storedObject.date {
+                if let ticker = self.jsonDecode(data){
+                    self.delegate?.tickerServiceDidComplited(ticker: ticker, date: date, chache: false)
+                }
+            }
+            self.delegate?.tickerServiceDidFailed(failed)
+        }
     }
     
 }

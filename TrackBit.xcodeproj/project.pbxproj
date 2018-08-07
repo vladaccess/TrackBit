@@ -29,6 +29,9 @@
 		86A72CE620F423E200137669 /* ViewController+marketPriceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A72CE520F423E200137669 /* ViewController+marketPriceDelegate.swift */; };
 		86E2DD2D2118E88C00AE5E0A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD2C2118E88C00AE5E0A /* CustomButton.swift */; };
 		86E2DD322118F4FB00AE5E0A /* UIView+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD312118F4FB00AE5E0A /* UIView+Extenstions.swift */; };
+		86E2DD3721199F1100AE5E0A /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD3621199F1100AE5E0A /* Entity.swift */; };
+		86E2DD392119A15D00AE5E0A /* dbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD382119A15D00AE5E0A /* dbManager.swift */; };
+		86E2DD412119AD1B00AE5E0A /* TrackBitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD402119AD1B00AE5E0A /* TrackBitTests.swift */; };
 		86ECAB1C20F1600100EED033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1B20F1600100EED033 /* AppDelegate.swift */; };
 		86ECAB1E20F1600100EED033 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1D20F1600100EED033 /* ViewController.swift */; };
 		86ECAB2120F1600100EED033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86ECAB1F20F1600100EED033 /* Main.storyboard */; };
@@ -41,6 +44,16 @@
 		86ECAB3820F1612E00EED033 /* TickerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB3720F1612E00EED033 /* TickerRouter.swift */; };
 		86ECAB3A20F1634800EED033 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB3920F1634800EED033 /* APIService.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86E2DD432119AD1B00AE5E0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86ECAB1020F1600100EED033 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86ECAB1720F1600100EED033;
+			remoteInfo = TrackBit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0DDD1B230C68454422D94FED /* Pods_TrackBit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrackBit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +79,11 @@
 		86A72CE520F423E200137669 /* ViewController+marketPriceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+marketPriceDelegate.swift"; sourceTree = "<group>"; };
 		86E2DD2C2118E88C00AE5E0A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		86E2DD312118F4FB00AE5E0A /* UIView+Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extenstions.swift"; sourceTree = "<group>"; };
+		86E2DD3621199F1100AE5E0A /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		86E2DD382119A15D00AE5E0A /* dbManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dbManager.swift; sourceTree = "<group>"; };
+		86E2DD3E2119AD1B00AE5E0A /* TrackBitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackBitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86E2DD402119AD1B00AE5E0A /* TrackBitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackBitTests.swift; sourceTree = "<group>"; };
+		86E2DD422119AD1B00AE5E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86ECAB1820F1600100EED033 /* TrackBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86ECAB1B20F1600100EED033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86ECAB1D20F1600100EED033 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +101,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		86E2DD3B2119AD1B00AE5E0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86ECAB1520F1600100EED033 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,10 +187,20 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		86E2DD3F2119AD1B00AE5E0A /* TrackBitTests */ = {
+			isa = PBXGroup;
+			children = (
+				86E2DD402119AD1B00AE5E0A /* TrackBitTests.swift */,
+				86E2DD422119AD1B00AE5E0A /* Info.plist */,
+			);
+			path = TrackBitTests;
+			sourceTree = "<group>";
+		};
 		86ECAB0F20F1600100EED033 = {
 			isa = PBXGroup;
 			children = (
 				86ECAB1A20F1600100EED033 /* TrackBit */,
+				86E2DD3F2119AD1B00AE5E0A /* TrackBitTests */,
 				86ECAB1920F1600100EED033 /* Products */,
 				0A18366ECE264D91E99ED310 /* Pods */,
 				67755C49A2425E61FE45865B /* Frameworks */,
@@ -176,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				86ECAB1820F1600100EED033 /* TrackBit.app */,
+				86E2DD3E2119AD1B00AE5E0A /* TrackBitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,6 +239,7 @@
 				8652DD1C20F289AD00A726AA /* MarketPriceService.swift */,
 				86ECAB3020F160A100EED033 /* TickerService.swift */,
 				8652DD1620F279C000A726AA /* API */,
+				86E2DD382119A15D00AE5E0A /* dbManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -213,6 +250,7 @@
 				86ECAB3520F160F500EED033 /* Ticker.swift */,
 				8607B70A20F25BD600E17948 /* ReferenceType.swift */,
 				8652DD1720F27A4600A726AA /* MarketPrice.swift */,
+				86E2DD3621199F1100AE5E0A /* Entity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,6 +258,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		86E2DD3D2119AD1B00AE5E0A /* TrackBitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86E2DD472119AD1B00AE5E0A /* Build configuration list for PBXNativeTarget "TrackBitTests" */;
+			buildPhases = (
+				86E2DD3A2119AD1B00AE5E0A /* Sources */,
+				86E2DD3B2119AD1B00AE5E0A /* Frameworks */,
+				86E2DD3C2119AD1B00AE5E0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86E2DD442119AD1B00AE5E0A /* PBXTargetDependency */,
+			);
+			name = TrackBitTests;
+			productName = TrackBitTests;
+			productReference = 86E2DD3E2119AD1B00AE5E0A /* TrackBitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		86ECAB1720F1600100EED033 /* TrackBit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86ECAB2A20F1600200EED033 /* Build configuration list for PBXNativeTarget "TrackBit" */;
@@ -249,6 +305,10 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Vladislav;
 				TargetAttributes = {
+					86E2DD3D2119AD1B00AE5E0A = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 86ECAB1720F1600100EED033;
+					};
 					86ECAB1720F1600100EED033 = {
 						CreatedOnToolsVersion = 9.4;
 					};
@@ -268,11 +328,19 @@
 			projectRoot = "";
 			targets = (
 				86ECAB1720F1600100EED033 /* TrackBit */,
+				86E2DD3D2119AD1B00AE5E0A /* TrackBitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		86E2DD3C2119AD1B00AE5E0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86ECAB1620F1600100EED033 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,6 +395,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		86E2DD3A2119AD1B00AE5E0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86E2DD412119AD1B00AE5E0A /* TrackBitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		86ECAB1420F1600100EED033 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,6 +424,7 @@
 				86ECAB3320F160AC00EED033 /* Service.swift in Sources */,
 				86ECAB3820F1612E00EED033 /* TickerRouter.swift in Sources */,
 				8607B70920F2542700E17948 /* Date+Formatter.swift in Sources */,
+				86E2DD392119A15D00AE5E0A /* dbManager.swift in Sources */,
 				86ECAB1C20F1600100EED033 /* AppDelegate.swift in Sources */,
 				8652DD1B20F2837E00A726AA /* Date+Extensions.swift in Sources */,
 				86ECAB3A20F1634800EED033 /* APIService.swift in Sources */,
@@ -357,6 +434,7 @@
 				8607B70D20F2650100E17948 /* MarketPriceApiService.swift in Sources */,
 				8652DD1820F27A4600A726AA /* MarketPrice.swift in Sources */,
 				86ECAB2F20F1605F00EED033 /* TickerApiService.swift in Sources */,
+				86E2DD3721199F1100AE5E0A /* Entity.swift in Sources */,
 				862662FC20FAB3DD000C86C3 /* ChartView.swift in Sources */,
 				86A72CE620F423E200137669 /* ViewController+marketPriceDelegate.swift in Sources */,
 				8607B70B20F25BD600E17948 /* ReferenceType.swift in Sources */,
@@ -364,6 +442,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86E2DD442119AD1B00AE5E0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86ECAB1720F1600100EED033 /* TrackBit */;
+			targetProxy = 86E2DD432119AD1B00AE5E0A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		86ECAB1F20F1600100EED033 /* Main.storyboard */ = {
@@ -385,6 +471,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		86E2DD452119AD1B00AE5E0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55776BLM7G;
+				INFOPLIST_FILE = TrackBitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Self.TrackBitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrackBit.app/TrackBit";
+			};
+			name = Debug;
+		};
+		86E2DD462119AD1B00AE5E0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55776BLM7G;
+				INFOPLIST_FILE = TrackBitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Self.TrackBitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrackBit.app/TrackBit";
+			};
+			name = Release;
+		};
 		86ECAB2820F1600200EED033 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -542,6 +668,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		86E2DD472119AD1B00AE5E0A /* Build configuration list for PBXNativeTarget "TrackBitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86E2DD452119AD1B00AE5E0A /* Debug */,
+				86E2DD462119AD1B00AE5E0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		86ECAB1320F1600100EED033 /* Build configuration list for PBXProject "TrackBit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

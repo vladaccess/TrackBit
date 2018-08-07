@@ -10,6 +10,10 @@ import Foundation
 
 class Service<T:Decodable> {
     
+    let db = dbManager()
+    
+    
+    
     func jsonDecode(_ data:Data) -> T? {
         do {
             return try JSONDecoder().decode(T.self, from: data)
@@ -17,6 +21,15 @@ class Service<T:Decodable> {
             return nil
         }
     }
+    
+    func insert(data:Data,date:Date,referenceType:String? = nil) {
+        db.insert(data: data, date: date)
+    }
+    
+    func fetch(byReference ref:String?) -> Entity? {
+        return db.fetch(byReference:ref)
+    }
+    
     
     
     
