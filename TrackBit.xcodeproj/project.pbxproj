@@ -34,6 +34,17 @@
 		86E2DD412119AD1B00AE5E0A /* TrackBitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD402119AD1B00AE5E0A /* TrackBitTests.swift */; };
 		86E2DD4B2119E5E600AE5E0A /* TickerAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD4A2119E5E600AE5E0A /* TickerAPITests.swift */; };
 		86E2DD4D2119F20F00AE5E0A /* SwiftBannerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD4C2119F20F00AE5E0A /* SwiftBannerManager.swift */; };
+		86E458F0211A3E0C0023C84B /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E458E6211A3E0B0023C84B /* WorkSans-Regular.ttf */; };
+		86E458F1211A3E0C0023C84B /* WorkSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E458E7211A3E0B0023C84B /* WorkSans-Light.ttf */; };
+		86E458F2211A3E0C0023C84B /* WorkSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E458E8211A3E0B0023C84B /* WorkSans-ExtraBold.ttf */; };
+		86E458F3211A3E0C0023C84B /* WorkSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E458E9211A3E0B0023C84B /* WorkSans-ExtraLight.ttf */; };
+		86E458F4211A3E0C0023C84B /* WorkSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E458EA211A3E0B0023C84B /* WorkSans-Medium.ttf */; };
+		86E458F5211A3E0C0023C84B /* WorkSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E458EB211A3E0B0023C84B /* WorkSans-SemiBold.ttf */; };
+		86E458F6211A3E0C0023C84B /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 86E458EC211A3E0B0023C84B /* OFL.txt */; };
+		86E458F7211A3E0C0023C84B /* WorkSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E458ED211A3E0B0023C84B /* WorkSans-Thin.ttf */; };
+		86E458F8211A3E0C0023C84B /* WorkSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E458EE211A3E0B0023C84B /* WorkSans-Black.ttf */; };
+		86E458F9211A3E0C0023C84B /* WorkSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86E458EF211A3E0B0023C84B /* WorkSans-Bold.ttf */; };
+		86E458FB211A40C60023C84B /* UIFont+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E458FA211A40C60023C84B /* UIFont+Extentions.swift */; };
 		86ECAB1C20F1600100EED033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1B20F1600100EED033 /* AppDelegate.swift */; };
 		86ECAB1E20F1600100EED033 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1D20F1600100EED033 /* ViewController.swift */; };
 		86ECAB2120F1600100EED033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86ECAB1F20F1600100EED033 /* Main.storyboard */; };
@@ -88,6 +99,17 @@
 		86E2DD422119AD1B00AE5E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86E2DD4A2119E5E600AE5E0A /* TickerAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerAPITests.swift; sourceTree = "<group>"; };
 		86E2DD4C2119F20F00AE5E0A /* SwiftBannerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBannerManager.swift; sourceTree = "<group>"; };
+		86E458E6211A3E0B0023C84B /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.ttf"; sourceTree = "<group>"; };
+		86E458E7211A3E0B0023C84B /* WorkSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Light.ttf"; sourceTree = "<group>"; };
+		86E458E8211A3E0B0023C84B /* WorkSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		86E458E9211A3E0B0023C84B /* WorkSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		86E458EA211A3E0B0023C84B /* WorkSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Medium.ttf"; sourceTree = "<group>"; };
+		86E458EB211A3E0B0023C84B /* WorkSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		86E458EC211A3E0B0023C84B /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		86E458ED211A3E0B0023C84B /* WorkSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Thin.ttf"; sourceTree = "<group>"; };
+		86E458EE211A3E0B0023C84B /* WorkSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Black.ttf"; sourceTree = "<group>"; };
+		86E458EF211A3E0B0023C84B /* WorkSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Bold.ttf"; sourceTree = "<group>"; };
+		86E458FA211A40C60023C84B /* UIFont+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extentions.swift"; sourceTree = "<group>"; };
 		86ECAB1820F1600100EED033 /* TrackBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86ECAB1B20F1600100EED033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86ECAB1D20F1600100EED033 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +187,7 @@
 				86553FAB2118E34400F91102 /* UserDefaults+Extensions.swift */,
 				86E2DD312118F4FB00AE5E0A /* UIView+Extenstions.swift */,
 				86E2DD4C2119F20F00AE5E0A /* SwiftBannerManager.swift */,
+				86E458FA211A40C60023C84B /* UIFont+Extentions.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -202,6 +225,23 @@
 			path = TrackBitTests;
 			sourceTree = "<group>";
 		};
+		86E458E5211A3E0B0023C84B /* Work_Sans */ = {
+			isa = PBXGroup;
+			children = (
+				86E458E6211A3E0B0023C84B /* WorkSans-Regular.ttf */,
+				86E458E7211A3E0B0023C84B /* WorkSans-Light.ttf */,
+				86E458E8211A3E0B0023C84B /* WorkSans-ExtraBold.ttf */,
+				86E458E9211A3E0B0023C84B /* WorkSans-ExtraLight.ttf */,
+				86E458EA211A3E0B0023C84B /* WorkSans-Medium.ttf */,
+				86E458EB211A3E0B0023C84B /* WorkSans-SemiBold.ttf */,
+				86E458EC211A3E0B0023C84B /* OFL.txt */,
+				86E458ED211A3E0B0023C84B /* WorkSans-Thin.ttf */,
+				86E458EE211A3E0B0023C84B /* WorkSans-Black.ttf */,
+				86E458EF211A3E0B0023C84B /* WorkSans-Bold.ttf */,
+			);
+			path = Work_Sans;
+			sourceTree = "<group>";
+		};
 		86ECAB0F20F1600100EED033 = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +274,7 @@
 				86ECAB2220F1600200EED033 /* Assets.xcassets */,
 				86ECAB2420F1600200EED033 /* LaunchScreen.storyboard */,
 				86ECAB2720F1600200EED033 /* Info.plist */,
+				86E458E5211A3E0B0023C84B /* Work_Sans */,
 			);
 			path = TrackBit;
 			sourceTree = "<group>";
@@ -351,9 +392,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E458F8211A3E0C0023C84B /* WorkSans-Black.ttf in Resources */,
+				86E458F6211A3E0C0023C84B /* OFL.txt in Resources */,
+				86E458F3211A3E0C0023C84B /* WorkSans-ExtraLight.ttf in Resources */,
 				86ECAB2620F1600200EED033 /* LaunchScreen.storyboard in Resources */,
 				86ECAB2320F1600200EED033 /* Assets.xcassets in Resources */,
 				86ECAB2120F1600100EED033 /* Main.storyboard in Resources */,
+				86E458F7211A3E0C0023C84B /* WorkSans-Thin.ttf in Resources */,
+				86E458F0211A3E0C0023C84B /* WorkSans-Regular.ttf in Resources */,
+				86E458F4211A3E0C0023C84B /* WorkSans-Medium.ttf in Resources */,
+				86E458F5211A3E0C0023C84B /* WorkSans-SemiBold.ttf in Resources */,
+				86E458F9211A3E0C0023C84B /* WorkSans-Bold.ttf in Resources */,
+				86E458F2211A3E0C0023C84B /* WorkSans-ExtraBold.ttf in Resources */,
+				86E458F1211A3E0C0023C84B /* WorkSans-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +494,7 @@
 				8652DD1B20F2837E00A726AA /* Date+Extensions.swift in Sources */,
 				86ECAB3A20F1634800EED033 /* APIService.swift in Sources */,
 				86553FAC2118E34400F91102 /* UserDefaults+Extensions.swift in Sources */,
+				86E458FB211A40C60023C84B /* UIFont+Extentions.swift in Sources */,
 				8652DD1D20F289AD00A726AA /* MarketPriceService.swift in Sources */,
 				8607B70720F2521900E17948 /* Float+Extension.swift in Sources */,
 				8607B70D20F2650100E17948 /* MarketPriceApiService.swift in Sources */,

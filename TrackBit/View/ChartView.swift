@@ -42,13 +42,13 @@ class ChartView:LineChartView {
     }
     
     func setupNoData() {
-        noDataFont = UIFont.systemFont(ofSize: 20)
+        noDataFont = UIFont.regularAppFont(with: 20.0)
         noDataTextColor = UIColor.black
     }
     
     func setupLeftAxis() {
         setupAxis(leftAxis)
-        leftAxis.labelFont = UIFont.systemFont(ofSize: 9)
+        leftAxis.labelFont = UIFont.lightAppFont(with: 9.0)
         leftAxis.valueFormatter = DefaultAxisValueFormatter.init(block: { (value, _) -> String in
             Float(value).toCurrency(0) ?? " "
         })
@@ -64,7 +64,7 @@ class ChartView:LineChartView {
     func setupRightAxis() {
         setupAxis(xAxis)
         xAxis.labelPosition = .bottom
-        xAxis.labelFont = UIFont.systemFont(ofSize: 9)
+        xAxis.labelFont = UIFont.lightAppFont(with: 9.0)
         xAxis.valueFormatter = DefaultAxisValueFormatter.init(block: { (value, _) -> String in
             Date(timeIntervalSince1970: value).toString("yy-MM-dd")
         })
