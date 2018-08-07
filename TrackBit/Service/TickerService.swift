@@ -42,7 +42,7 @@ class TickerService:Service<Ticker> {
     
     func failed(_ failed:ServiceFailure) {
         DispatchQueue.main.async {
-            guard let storedObject = self.fetch(byReference: nil) else {
+            guard let storedObject = self.db.fetch(byReference: nil) else {
                 self.delegate?.tickerServiceDidFailed(failed)
                 return
             }
