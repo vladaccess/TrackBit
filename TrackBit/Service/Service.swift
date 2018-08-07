@@ -12,8 +12,6 @@ class Service<T:Decodable> {
     
     let db = dbManager()
     
-    
-    
     func jsonDecode(_ data:Data) -> T? {
         do {
             return try JSONDecoder().decode(T.self, from: data)
