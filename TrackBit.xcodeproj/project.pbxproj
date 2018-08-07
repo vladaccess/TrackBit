@@ -32,6 +32,7 @@
 		86E2DD3721199F1100AE5E0A /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD3621199F1100AE5E0A /* Entity.swift */; };
 		86E2DD392119A15D00AE5E0A /* dbManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD382119A15D00AE5E0A /* dbManager.swift */; };
 		86E2DD412119AD1B00AE5E0A /* TrackBitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD402119AD1B00AE5E0A /* TrackBitTests.swift */; };
+		86E2DD4B2119E5E600AE5E0A /* TickerAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E2DD4A2119E5E600AE5E0A /* TickerAPITests.swift */; };
 		86ECAB1C20F1600100EED033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1B20F1600100EED033 /* AppDelegate.swift */; };
 		86ECAB1E20F1600100EED033 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86ECAB1D20F1600100EED033 /* ViewController.swift */; };
 		86ECAB2120F1600100EED033 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86ECAB1F20F1600100EED033 /* Main.storyboard */; };
@@ -84,6 +85,7 @@
 		86E2DD3E2119AD1B00AE5E0A /* TrackBitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackBitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86E2DD402119AD1B00AE5E0A /* TrackBitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackBitTests.swift; sourceTree = "<group>"; };
 		86E2DD422119AD1B00AE5E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86E2DD4A2119E5E600AE5E0A /* TickerAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerAPITests.swift; sourceTree = "<group>"; };
 		86ECAB1820F1600100EED033 /* TrackBit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackBit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86ECAB1B20F1600100EED033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86ECAB1D20F1600100EED033 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 		86E2DD3F2119AD1B00AE5E0A /* TrackBitTests */ = {
 			isa = PBXGroup;
 			children = (
+				86E2DD4A2119E5E600AE5E0A /* TickerAPITests.swift */,
 				86E2DD402119AD1B00AE5E0A /* TrackBitTests.swift */,
 				86E2DD422119AD1B00AE5E0A /* Info.plist */,
 			);
@@ -399,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E2DD4B2119E5E600AE5E0A /* TickerAPITests.swift in Sources */,
 				86E2DD412119AD1B00AE5E0A /* TrackBitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

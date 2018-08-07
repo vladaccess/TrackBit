@@ -52,4 +52,12 @@ class TrackBitTests: XCTestCase {
         XCTAssertEqual(monthObjects!.referenceType, ReferenceType.month.rawValue)
     }
     
+    func testCounting() {
+        var count:Int
+        db.insert(data: Data(), date: Date(), referenceType: ReferenceType.month.rawValue)
+        db.insert(data: Data(), date: Date())
+        count = db.count()
+        XCTAssertEqual(count, 2)
+    }
+    
 }
