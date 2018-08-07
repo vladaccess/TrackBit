@@ -23,13 +23,13 @@ class MarketPriceService:Service<MarketPrice> {
     
     
     func get(referenceType:ReferenceType) {
-        marketPriceAPI.get(referenceType: referenceType, success: { (data) in
-            if let object = self.fetch(byReference: referenceType) {
-                DispatchQueue.main.async {
-                    self.delegate?.marketPriceDidComplite(object)
-                }
-                return
+        if let object = self.fetch(byReference: referenceType) {
+            DispatchQueue.main.async {
+                self.delegate?.marketPriceDidComplite(object)
             }
+            return
+        }
+        marketPriceAPI.get(referenceType: referenceType, success: { (data) in
             self.success(referenceType,data:data)
         }) { (failure) in
             self.failure(referenceType, failure)
@@ -37,24 +37,29 @@ class MarketPriceService:Service<MarketPrice> {
     }
     
     
-    //Will
     func success(_ refType:ReferenceType,data:Data) {
         DispatchQueue.main.async {
             if let marketPrice = self.jsonDecode(data) {
                 self.delegate?.marketPriceDidComplite(marketPrice)
-                //Insert in db
+                self.insert(data:data, date: Date(), referenceType: refType.rawValue)
             }else {
                 self.delegate?.marketPriceDidfailed(.server)
-                //FIX ????????????
             }
         }
     }
     
     
     
-    //Will
+    
     func failure(_ refType:ReferenceType,_ fail:ServiceFailure) {
-        //Fail
+        DispatchQueue.main.async {
+            if let marketPrice = self.fetch(byReference: refType) {
+                self.delegate?.marketPriceDidComplite(marketPrice)
+            }else {
+                self.delegate?.marketPriceDidfailed(fail)
+            }
+        }
+        
     }
     
     
