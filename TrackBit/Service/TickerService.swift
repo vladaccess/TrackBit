@@ -41,7 +41,7 @@ class TickerService:Service<Ticker> {
     }
     
     func failed(_ failed:ServiceFailure) {
-        //TODO
+        //If have data in db fetch else fail
     }
     
 }

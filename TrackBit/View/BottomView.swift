@@ -9,6 +9,7 @@
 import UIKit
 
 
+
 protocol BottomViewDelegate:class {
     func buttonTappedWith(_ ref:ReferenceType)
 }

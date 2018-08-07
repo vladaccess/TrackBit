@@ -7,7 +7,6 @@ target 'TrackBit' do
 
   pod 'Alamofire'
   pod 'Charts'
-  pod 'ProgressKit', :git => "https://github.com/kaunteya/ProgressKit.git", :branch => 'swift-3'
 
 
 end
