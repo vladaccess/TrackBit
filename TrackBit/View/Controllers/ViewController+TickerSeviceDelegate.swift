@@ -9,13 +9,24 @@
 import Foundation
 
 extension ViewController:TickerServiceProtocol {
-    func tickerServiceDidComplited(ticker: Ticker, date: Date, chache: Bool) {
+    func tickerServiceDidComplited(ticker: Ticker, date: Date, cache: Bool) {
         bodyView.priceView.setPrice(price: ticker.USD.last, date: date)
+        if cache {
+            //Show banner(NoConnection)
+        }
         activityView.stopAnimating()
     }
     
     func tickerServiceDidFailed(_ serviceFail: ServiceFailure) {
+        bodyView.priceView.setPrice(price: 0)
+        activityView.stopAnimating()
         
+        switch serviceFail {
+        case .connection:
+            //ShowBanner
+        case .server:
+            //ShowBanner
+        }
     }
     
 }

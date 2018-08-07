@@ -7,6 +7,8 @@ target 'TrackBit' do
 
   pod 'Alamofire'
   pod 'Charts'
+  pod 'SwiftMessages'
+  pod 'RealmSwift'
 
 
 end

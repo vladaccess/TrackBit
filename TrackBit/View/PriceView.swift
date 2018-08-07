@@ -19,7 +19,7 @@ class PriceView:UIView {
         priceLabel.text = "_"
     }
     
-    func setPrice(price:Float, date:Date?) {
+    func setPrice(price:Float, date:Date? = nil) {
         guard let stringPrice = price.toCurrency() else { return }
         priceLabel.text = stringPrice
         //Show animation

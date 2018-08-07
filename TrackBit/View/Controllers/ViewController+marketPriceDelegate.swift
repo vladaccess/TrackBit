@@ -28,7 +28,7 @@ extension ViewController:MarketPriceDelegate {
     }
     
     func marketPriceDidfailed(_ serviceFail: ServiceFailure) {
-        
+        activityView.stopAnimating()
     }
     
     
